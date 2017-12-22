@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="@string/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/welcome"
+        android:layout_weight="0.26"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:textAlignment="center" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/FtoCedit_text"
+            android:text="Fahrenheit to Celsius"
+            android:selectAllOnFocus="true"
+            />
+
+        <Button
+            android:text="F -> C"
+            android:layout_width="183dp"
+            android:layout_height="58dp"
+            android:id="@+id/FtoCbutton"
+            android:textAlignment="center"
+            />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/FtoCresult"
+        android:layout_weight="0.08"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/CtoFedit_text"
+            android:text="Celsius to Fahrenheit"
+            android:selectAllOnFocus="true"
+            />
+
+        <Button
+            android:text="C -> F"
+            android:layout_width="183dp"
+            android:layout_height="58dp"
+            android:id="@+id/CtoFbutton"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CtoFresult"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:visibility="invisible"/>
+
+
+</LinearLayout>
